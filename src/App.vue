@@ -1,17 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TabsWrapper>
+    <TabAss title="Tab 1">Hello Tab 1 </TabAss>
+    <TabAss title="Tab 2">Hello t2</TabAss>
+    <TabAss title="Tab 3">Hello t3</TabAss>
+    <TabAss title="Tab 4">Hello Tab4</TabAss>
+  </TabsWrapper>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import TabAss from './components/TabAss.vue'
+import TabsWrapper from './components/TabsWrapper.vue'
 </script>
 
 <style>
@@ -19,7 +17,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
