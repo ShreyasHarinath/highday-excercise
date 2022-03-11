@@ -1,16 +1,28 @@
 <template>
   <img alt="logo" src="./assets/logo-highday-600x600.png">
   <h2>{{title}}</h2>
-  
+  <div v-if="showDates"><MonthDate /></div>
+  <button @click="toggleDate">
+    <span v-if="showDates">Hide Dates</span>
+    <span v-else>Show Dates</span>
+  </button>
 </template>
 
 <script>
+import MonthDate from './components/MonthDate.vue'
 
 export default {
   name: 'App',
+  components: { MonthDate },
   data() {
     return {
-      title: 'My first Vue :0-'
+      title: 'My first Vue :0-',
+      showDates: false
+    }
+  },
+  methods: {
+    toggleDate() {
+      this.showDates=!this.showDates
     }
   }
 }
