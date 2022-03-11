@@ -2,17 +2,17 @@
 
   <img alt="logo" src="./assets/logo-highday-600x600.png">
   <h3>April</h3>
-  <TabsWrapper>
-    <TabAss title="12">Hello Tab 1 </TabAss>
-    <TabAss title="13">Hello t2</TabAss>
-    <TabAss title="14">Hello t3</TabAss>
-    <TabAss title="15">Hello Tab4</TabAss>
-  </TabsWrapper>
+  <TaskCard>
+    <MonthDate title="12">Hello Tab 1 </MonthDate>
+    <MonthDate title="13">Hello t2</MonthDate>
+    <MonthDate title="14">Hello t3</MonthDate>
+    <MonthDate title="15">Hello Tab4</MonthDate>
+  </TaskCard>
 </template>
 
 <script setup>
-import TabAss from './components/TabAss.vue'
-import TabsWrapper from './components/TabsWrapper.vue'
+import MonthDate from './components/MonthDate.vue'
+import TaskCard from './components/TaskCard.vue'
 </script>
 
 <style>
