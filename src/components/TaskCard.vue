@@ -33,6 +33,7 @@ export default {
 .tabs{
        max-width: 400px;
        margin: 0 auto;
+       position: center;
 }
 
 .tabs__header{

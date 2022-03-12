@@ -1,27 +1,27 @@
 <template>
 
   <img alt="logo" src="./assets/logo-highday-600x600.png">
+  <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
     <MonthDate title="12" style="background-color: purple"><li v-for="todo of todos" :key="todo.id">{{todo.name}}</li></MonthDate>
-    <MonthDate title="13">Hello t2</MonthDate>
-    <MonthDate title="14">Hello t3</MonthDate>
-    <MonthDate title="15">Hello Tab4</MonthDate>
+    <MonthDate title="13" style="background-color: purple">Hello t2</MonthDate>
+    <MonthDate title="14" style="background-color: purple">Hello t3</MonthDate>
+    <MonthDate title="15" style="background-color: purple">Hello Tab4</MonthDate>
   </TaskCard>
-  <h1>Todos</h1>
-  <ul>
-    
-  </ul>
+  
+  
 </template>
 
 <script>
 import axios from "axios";
 import MonthDate from './components/MonthDate.vue';
 import TaskCard from './components/TaskCard.vue';
+import ProfilePicture from './components/ProfilePicture.vue';
 
 
 export default {
-  components: { TaskCard, MonthDate },
+  components: { TaskCard, MonthDate, ProfilePicture },
   name: "app",
   data() {
     return {
@@ -66,5 +66,11 @@ h3 {
 }
 body {
   background-color: lightblue;
+}
+.posii {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
 }
 </style>
