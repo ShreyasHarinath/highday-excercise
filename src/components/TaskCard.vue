@@ -34,6 +34,8 @@ export default {
        max-width: 400px;
        margin: 0 auto;
        position: center;
+       opacity:0.75;
+       transition:100ms linear all;;
 }
 
 .tabs__header{
@@ -41,6 +43,9 @@ export default {
     list-style: none;
     padding: 0;
     display: flex;
+    text-align: center;
+    text-shadow: #ddd;
+    text-align-last: center;
 }
 
 .tabs__header li{

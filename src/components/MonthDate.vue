@@ -23,11 +23,14 @@ export default {
 
 <style scoped>
 .tab-content {
-    min-height: 400px;
+    min-height: 800px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.5);
-    box-color: white;
+    min-width: 400px;
     color: antiquewhite;
+    background:#fff;
+    padding:1rem;
+    border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
 } 
 </style>

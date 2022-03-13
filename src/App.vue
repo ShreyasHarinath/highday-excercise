@@ -4,13 +4,29 @@
   <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
-    <MonthDate title="12" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.name}}</li></MonthDate>
-    <MonthDate title="13" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.email}}</li></MonthDate>
-    <MonthDate title="14" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.username}}</li></MonthDate>
-    <MonthDate title="15" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.address.city}}</li></MonthDate>
+    <MonthDate title="12" style="background-color: purple">
+      <div class="task-container">
+        <div class="title-container">
+          <span v-for="user of users" :key="user.id">
+            <ul><li v-for="task in user.tasks" :key="task.id">{{task.title}}{{task.starttime}} to {{task.endtime}}</li></ul></span></div></div>
+    </MonthDate>
+    <MonthDate title="13" style="background-color: purple">
+      <div class="task-container">
+        <div class="title-container">
+          <li v-for="user of users" :key="user.id">{{user.email}}</li></div></div>
+    </MonthDate>
+    <MonthDate title="14" style="background-color: purple">
+        <div class="task-container">
+         <div class="title-container">
+           <li v-for="user of users" :key="user.id">{{user.username}}</li></div></div>
+    </MonthDate>
+    <MonthDate title="15" style="background-color: purple">
+        <div class="task-container">
+        <div class="title-container">
+          <li v-for="user of users" :key="user.id">{{user.tasks}}</li></div></div>
+    </MonthDate>
   </TaskCard>
-  
-  
+
 </template>
 
 <script>
@@ -30,7 +46,7 @@ export default {
   },
   async created() {
     try {
-      const res = await axios.get('http://localhost:3000/todos');
+      const res = await axios.get('http://localhost:3000/users');
 
       this.users = res.data;
     } catch (e) {
@@ -72,5 +88,18 @@ body {
   top: 0px;
   right: 0px;
 
+}
+.task-container{
+  margin: 50px;
+  background: #231e39;
+  border-radius: 10px;
+  color: #b3b8cd;
+  text-align: center;
+  width: auto;
+  padding: 20px;
+
+}
+.title-container{
+  margin: 10px;
 }
 </style>
