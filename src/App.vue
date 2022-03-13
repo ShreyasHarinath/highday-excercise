@@ -4,10 +4,10 @@
   <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
-    <MonthDate title="12" style="background-color: purple"><li v-for="todo of todos" :key="todo.id">{{todo.name}}</li></MonthDate>
-    <MonthDate title="13" style="background-color: purple">Hello t2</MonthDate>
-    <MonthDate title="14" style="background-color: purple">Hello t3</MonthDate>
-    <MonthDate title="15" style="background-color: purple">Hello Tab4</MonthDate>
+    <MonthDate title="12" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.name}}</li></MonthDate>
+    <MonthDate title="13" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.email}}</li></MonthDate>
+    <MonthDate title="14" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.username}}</li></MonthDate>
+    <MonthDate title="15" style="background-color: purple"><li v-for="user of users" :key="user.id">{{user.address.city}}</li></MonthDate>
   </TaskCard>
   
   
@@ -25,14 +25,14 @@ export default {
   name: "app",
   data() {
     return {
-     todos : []
+     users : []
     }
   },
   async created() {
     try {
       const res = await axios.get('http://localhost:3000/todos');
 
-      this.todos = res.data;
+      this.users = res.data;
     } catch (e) {
         console.error(e);
     }
