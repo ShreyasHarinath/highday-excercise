@@ -27,7 +27,7 @@ export default {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.5);
-    min-width: 400px;
+    min-width: 380px;
     color: antiquewhite;
     background:#fff;
     padding:1rem;

@@ -1,10 +1,9 @@
 <template>
-<title>HIGHDAY Exercise</title>
   <img alt="logo" src="./assets/logo-highday-600x600.png">
   <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
-    <MonthDate title="12" style="background-color: purple">
+    <MonthDate title="12 Wed" style="background-color: purple">
       <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 12"> 
@@ -13,14 +12,14 @@
                   <h4>{{task.title}}</h4></div> on {{task.date}} from 
                   {{task.starttime}}  to {{task.endtime}} with
                 <span v-for="mem in task.members" :key="mem.members">
-                  {{" " + mem.name + " "}}
+                  {{" | " + mem.name + " | "}}
                 </span>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="13" style="background-color: purple">
+    <MonthDate title="13 Thu" style="background-color: purple">
       <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 13"> 
@@ -29,14 +28,14 @@
                   <h4>{{task.title}}</h4></div> on {{task.date}} from 
                   {{task.starttime}}  to {{task.endtime}} with
                 <span v-for="mem in task.members" :key="mem.members">
-                  {{" " + mem.name + " "}}
+                  {{" | " + mem.name + " | "}}
                 </span>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="14" style="background-color: purple">
+    <MonthDate title="14 Fri" style="background-color: purple">
         <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 14"> 
@@ -45,14 +44,14 @@
                   <h4>{{task.title}}</h4></div> on {{task.date}} from 
                   {{task.starttime}}  to {{task.endtime}} with
                 <span v-for="mem in task.members" :key="mem.members">
-                  {{" " + mem.name + " "}}
+                  {{" | " + mem.name + " | "}}
                 </span>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="15" style="background-color: purple">
+    <MonthDate title="15 Sat" style="background-color: purple">
         <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 15"> 
@@ -61,7 +60,7 @@
                   <h4>{{task.title}}</h4></div> on {{task.date}} from 
                   {{task.starttime}}  to {{task.endtime}} with
                 <span v-for="mem in task.members" :key="mem.members">
-                  {{" " + mem.name + " "}}
+                  {{" | " + mem.name + " | "}}
                 </span>
             </div><hr>
           </div>

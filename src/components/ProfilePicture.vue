@@ -4,6 +4,7 @@
     <div>Sara Stone</div></div>
 </template>
 
+
 <style scoped>
 .image-container {
     height:80px;

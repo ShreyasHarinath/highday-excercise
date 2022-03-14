@@ -39,18 +39,18 @@ export default {
 }
 
 .tabs__header{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     list-style: none;
     padding: 0;
     display: flex;
-    text-align: center;
+    text-align: "." center;;
     text-shadow: #ddd;
     text-align-last: center;
 }
 
 .tabs__header li{
-    width: 100px;
-    height: 120px;
+    width: 78px;
+    height: 100px;
     text-align: center;
     padding: 10px 20px;
     margin-right: 10px;
