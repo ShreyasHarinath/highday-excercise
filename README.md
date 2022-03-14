@@ -5,19 +5,15 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Run JSON Server
+```
+json-server db.json / json-server dbs.json
+```
+Copy the link under *Resources* and paste inside get function as argument ####const res = await axios.get('');####
+
+### Compile
 ```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
 ```
 
 ### Customize configuration
