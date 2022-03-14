@@ -105,25 +105,26 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50 ;
   margin-top: 60px;
+  background-color: #8EEBEC;
 }
 
 
 h3 {
  text-align: center;
- line-height: 100px;
+ line-height: 80px;
  color:blueviolet;
  font-weight: bold;
 
 }
-body {
-  background-color: lightblue;
-}
+
+
 .posii {
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
 
 }
+
 .task-container{
   margin: 10px;
   background: #231e39;
@@ -133,10 +134,12 @@ body {
   padding: 20px;
 
 }
+
 .title-container{
   margin: 10px;
   text-align: start ;
 }
+
 .task-container1{
   margin: 0px;
   background: black;
@@ -145,15 +148,16 @@ body {
   text-align: center;
   width: auto;
   padding: 40px;
-
 }
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 50px;
-  width: 50px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
+  padding: 5px;
 }
 </style>
