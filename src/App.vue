@@ -5,10 +5,18 @@
   <h3>April</h3>
   <TaskCard>
     <MonthDate title="12" style="background-color: purple">
-      <div class="task-container">
-        <div class="title-container">
+                   
           <span v-for="user of users" :key="user.id">
-            <ul><li v-for="task in user.tasks" :key="task.id">{{task.title}}{{task.starttime}} to {{task.endtime}}</li></ul></span></div></div>
+           
+            <div v-for="task in user.tasks" :key="task.id">
+             <div v-if="task.f === 11"> 
+              <div class="task-container1">
+                
+                <div class="title-container">{{task.title}}</div> on {{task.date}} from {{task.starttime}} 
+                to {{task.endtime}} with 
+                <span v-for="mem in task.members" :key="mem.members">
+                  {{" " + mem.name + " "}}
+                </span></div><hr></div></div></span>
     </MonthDate>
     <MonthDate title="13" style="background-color: purple">
       <div class="task-container">
@@ -90,7 +98,7 @@ body {
 
 }
 .task-container{
-  margin: 50px;
+  margin: 10px;
   background: #231e39;
   border-radius: 10px;
   color: #b3b8cd;
@@ -101,5 +109,17 @@ body {
 }
 .title-container{
   margin: 10px;
+  text-align: start ;
 }
+.task-container1{
+  margin: 10px;
+  background: black;
+  border-radius: 20px;
+  color: #b3b8cd;
+  text-align: center;
+  width: auto;
+  padding: 40px;
+
+}
+
 </style>
