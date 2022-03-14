@@ -49,13 +49,12 @@ export default {
 }
 
 .tabs__header li{
-    width: 20px;
-    height: 60px;
+    width: 100px;
+    height: 120px;
     text-align: center;
     padding: 10px 20px;
     margin-right: 10px;
     background-color: #ddd;
-    
     border-radius: 60px;
     cursor: pointer;
     transition: 0.4s all ease-out;

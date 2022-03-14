@@ -1,37 +1,72 @@
 <template>
-
+<title>HIGHDAY Exercise</title>
   <img alt="logo" src="./assets/logo-highday-600x600.png">
   <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
     <MonthDate title="12" style="background-color: purple">
-                   
-          <span v-for="user of users" :key="user.id">
-           
-            <div v-for="task in user.tasks" :key="task.id">
-             <div v-if="task.f === 11"> 
-              <div class="task-container1">
-                
-                <div class="title-container">{{task.title}}</div> on {{task.date}} from {{task.starttime}} 
-                to {{task.endtime}} with 
+      <span v-for="user of users" :key="user.id">
+        <div v-for="task in user.tasks" :key="task.id">
+          <div v-if="task.f === 12"> 
+            <div class="task-container1">              
+              <div class="title-container">
+                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
+                  {{task.starttime}}  to {{task.endtime}} with
                 <span v-for="mem in task.members" :key="mem.members">
                   {{" " + mem.name + " "}}
-                </span></div><hr></div></div></span>
+                </span>
+            </div><hr>
+          </div>
+        </div>
+      </span>
     </MonthDate>
     <MonthDate title="13" style="background-color: purple">
-      <div class="task-container">
-        <div class="title-container">
-          <li v-for="user of users" :key="user.id">{{user.email}}</li></div></div>
+      <span v-for="user of users" :key="user.id">
+        <div v-for="task in user.tasks" :key="task.id">
+          <div v-if="task.f === 13"> 
+            <div class="task-container1">              
+              <div class="title-container">
+                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
+                  {{task.starttime}}  to {{task.endtime}} with
+                <span v-for="mem in task.members" :key="mem.members">
+                  {{" " + mem.name + " "}}
+                </span>
+            </div><hr>
+          </div>
+        </div>
+      </span>
     </MonthDate>
     <MonthDate title="14" style="background-color: purple">
-        <div class="task-container">
-         <div class="title-container">
-           <li v-for="user of users" :key="user.id">{{user.username}}</li></div></div>
+        <span v-for="user of users" :key="user.id">
+        <div v-for="task in user.tasks" :key="task.id">
+          <div v-if="task.f === 14"> 
+            <div class="task-container1">              
+              <div class="title-container">
+                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
+                  {{task.starttime}}  to {{task.endtime}} with
+                <span v-for="mem in task.members" :key="mem.members">
+                  {{" " + mem.name + " "}}
+                </span>
+            </div><hr>
+          </div>
+        </div>
+      </span>
     </MonthDate>
     <MonthDate title="15" style="background-color: purple">
-        <div class="task-container">
-        <div class="title-container">
-          <li v-for="user of users" :key="user.id">{{user.tasks}}</li></div></div>
+        <span v-for="user of users" :key="user.id">
+        <div v-for="task in user.tasks" :key="task.id">
+          <div v-if="task.f === 15"> 
+            <div class="task-container1">              
+              <div class="title-container">
+                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
+                  {{task.starttime}}  to {{task.endtime}} with
+                <span v-for="mem in task.members" :key="mem.members">
+                  {{" " + mem.name + " "}}
+                </span>
+            </div><hr>
+          </div>
+        </div>
+      </span>
     </MonthDate>
   </TaskCard>
 
@@ -64,7 +99,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -73,19 +108,12 @@ export default {
   margin-top: 60px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-}
+
 h3 {
  text-align: center;
  line-height: 100px;
  color:blueviolet;
+ font-weight: bold;
 
 }
 body {
@@ -102,7 +130,6 @@ body {
   background: #231e39;
   border-radius: 10px;
   color: #b3b8cd;
-  text-align: center;
   width: auto;
   padding: 20px;
 
@@ -112,7 +139,7 @@ body {
   text-align: start ;
 }
 .task-container1{
-  margin: 10px;
+  margin: 0px;
   background: black;
   border-radius: 20px;
   color: #b3b8cd;
@@ -121,5 +148,13 @@ body {
   padding: 40px;
 
 }
-
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 </style>
