@@ -9,7 +9,7 @@ yarn install
 ```
 json-server db.json / json-server dbs.json
 ```
-Copy the link under *Resources* and paste inside get function as argument ####const res = await axios.get('');####
+Copy the link under *Resources* and paste inside get function as argument __const res = await axios.get('');__
 
 ### Compile
 ```
