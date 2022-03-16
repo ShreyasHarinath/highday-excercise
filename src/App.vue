@@ -3,65 +3,97 @@
   <div class="posii"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
-    <MonthDate title="12 Wed" style="background-color: purple">
+    <MonthDate title="12 Wed" style="background-color: #2B3856">
       <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
-          <div v-if="task.f === 12"> 
-            <div class="task-container1">              
+          <div v-if="task.f === 12">
+            <div class="task-container" v-bind:style="{background: user.primary_color}" >         
               <div class="title-container">
-                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
-                  {{task.starttime}}  to {{task.endtime}} with
+                 <h4>{{task.title}}</h4> 
+              </div> 
+              <div class="title-container">
                 <span v-for="mem in task.members" :key="mem.members">
                   {{" | " + mem.name + " | "}}
+                </span><p></p>
+                <span v-for="dp in task.members" :key="dp.members"> 
+                  <img class="round" alt="avatars" :src="dp.avatar" style="display:inline-block;"/> 
                 </span>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span style="text-align: end;">
+                {{task.starttime}} - {{task.endtime}} 
+              </span></div>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="13 Thu" style="background-color: purple">
+    <MonthDate title="13 Thu" style="background-color: #2B3856">
       <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 13"> 
-            <div class="task-container1">              
+            <div class="task-container" v-bind:style="{background: user.primary_color}" >         
               <div class="title-container">
-                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
-                  {{task.starttime}}  to {{task.endtime}} with
+                 <h4>{{task.title}}</h4> 
+              </div> 
+              <div class="title-container">
                 <span v-for="mem in task.members" :key="mem.members">
                   {{" | " + mem.name + " | "}}
+                </span><p></p>
+                <span v-for="dp in task.members" :key="dp.members"> 
+                  <img class="round" alt="avatars" :src="dp.avatar" style="display:inline-block;"/> 
                 </span>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span style="text-align: end;">
+                {{task.starttime}} - {{task.endtime}} 
+              </span></div>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="14 Fri" style="background-color: purple">
+    <MonthDate title="14 Fri" style="background-color: #2B3856">
         <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 14"> 
-            <div class="task-container1">              
+            <div class="task-container" v-bind:style="{background: user.primary_color}" >         
               <div class="title-container">
-                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
-                  {{task.starttime}}  to {{task.endtime}} with
+                 <h4>{{task.title}}</h4> 
+              </div> 
+              <div class="title-container">
                 <span v-for="mem in task.members" :key="mem.members">
                   {{" | " + mem.name + " | "}}
+                </span><p></p>
+                <span v-for="dp in task.members" :key="dp.members"> 
+                  <img class="round" alt="avatars" :src="dp.avatar" style="display:inline-block;"/> 
                 </span>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span style="text-align: end;">
+                {{task.starttime}} - {{task.endtime}} 
+              </span></div>
             </div><hr>
           </div>
         </div>
       </span>
     </MonthDate>
-    <MonthDate title="15 Sat" style="background-color: purple">
+    <MonthDate title="15 Sat" style="background-color: #2B3856">
         <span v-for="user of users" :key="user.id">
         <div v-for="task in user.tasks" :key="task.id">
           <div v-if="task.f === 15"> 
-            <div class="task-container1">              
+            <div class="task-container" v-bind:style="{background: user.primary_color}" >         
               <div class="title-container">
-                  <h4>{{task.title}}</h4></div> on {{task.date}} from 
-                  {{task.starttime}}  to {{task.endtime}} with
+                 <h4>{{task.title}}</h4> 
+              </div> 
+              <div class="title-container">
                 <span v-for="mem in task.members" :key="mem.members">
                   {{" | " + mem.name + " | "}}
+                </span><p></p>
+                <span v-for="dp in task.members" :key="dp.members"> 
+                  <img class="round" alt="avatars" :src="dp.avatar" style="display:inline-block;"/> 
                 </span>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span style="text-align: end;">
+                {{task.starttime}} - {{task.endtime}} 
+              </span></div>
             </div><hr>
           </div>
         </div>
@@ -99,6 +131,7 @@ export default {
 </script>
 
 <style scoped>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -108,15 +141,16 @@ export default {
   background-color: #8EEBEC;
 }
 
-
 h3 {
  text-align: center;
  line-height: 80px;
  color:blueviolet;
  font-weight: bold;
-
 }
 
+hr{
+  color: whitesmoke;
+}
 
 .posii {
   position: absolute;
@@ -125,29 +159,21 @@ h3 {
 
 }
 
-.task-container{
-  margin: 10px;
-  background: #231e39;
-  border-radius: 10px;
-  color: #b3b8cd;
-  width: auto;
-  padding: 20px;
-
-}
-
 .title-container{
   margin: 10px;
   text-align: start ;
+  color: whitesmoke;
+
 }
 
-.task-container1{
+.task-container{
   margin: 0px;
-  background: black;
   border-radius: 20px;
   color: #b3b8cd;
   text-align: center;
   width: auto;
-  padding: 40px;
+  padding: 10px;
+  max-height: auto;
 }
 
 img {
@@ -160,4 +186,11 @@ img {
   border-radius: 50%;
   padding: 5px;
 }
+
+.round{
+  max-height: 40px;
+  max-width: 40px;
+}
+
+
 </style>

@@ -1,10 +1,12 @@
-{"users": 
+{
+  "users": 
   [
       {
         "id": 1,
-        "name": "Leanne Graham",
-        "username": "Bret",
-        "email": "Sincere@april.biz",
+        "name": "Harry Stone",
+        "username": "Ston",
+        "email": "stone@april.biz",
+        "primary_color": "#6a5acd",
         "tasks": [
             {
           "f":12,      
@@ -12,8 +14,17 @@
           "date": "12/04/2022",
           "starttime": "09:00",
           "endtime": "10:00",
-          "title": "Mobile app design",
-          "members":[{"name": "Mike"}, {"name": "Anita"}]
+          "title": "Mobile App Design",
+          "members":[
+                    {
+                      "name": "Mike",
+                      "avatar": "https://reqres.in/img/faces/5-image.jpg"
+                    },
+                    {
+                      "name": "Anita",
+                      "avatar": "https://reqres.in/img/faces/3-image.jpg"
+                    }
+                    ]
         },
         {
           "f":12,
@@ -22,16 +33,34 @@
           "starttime": "10:00",
           "endtime": "11:20",
           "title": "Software Testing",
-          "members":[{"name": "David"}, {"name": "Anita"}]
+          "members":[
+              {
+               "name": "David",
+               "avatar": "https://reqres.in/img/faces/4-image.jpg"
+              }, 
+              {
+              "name": "Anita",
+              "avatar": "https://reqres.in/img/faces/3-image.jpg"
+              }
+            ]
         },
         {
           "f":12,      
-          "id": 1,
+          "id": 3,
           "date": "12/04/2022",
           "starttime": "14:00",
           "endtime": "16:00",
           "title": "Web Development",
-          "members":[{"name": "Mike"}, {"name": "Anita"}]
+          "members":[
+            {
+              "name": "Mike",
+              "avatar": "https://reqres.in/img/faces/5-image.jpg"
+            },
+            {
+              "name": "Anita",
+              "avatar": "https://reqres.in/img/faces/3-image.jpg"
+            }
+          ]
         },
         {
           "f":13,
@@ -40,7 +69,16 @@
           "starttime": "10:00",
           "endtime": "11:00",
           "title": "Scrum Team Meeting",
-          "members":[{"name": "Ilyas"}, {"name": "Ismail"}, {"name": "Oatman"}]
+          "members":[
+            {
+              "name": "David",
+              "avatar": "https://reqres.in/img/faces/4-image.jpg"
+              }, 
+              {
+                "name": "Ismail",
+                "avatar": "https://reqres.in/img/faces/6-image.jpg"
+              }
+            ]
         },
         {
           "f":13,
@@ -49,7 +87,16 @@
           "starttime": "11:00",
           "endtime": "12:00",
           "title": "Make Report",
-          "members":[{"name": "Shaid"}, {"name": "Sanga"}]
+          "members":[
+              {
+              "name": "Shaid",
+              "avatar": "https://reqres.in/img/faces/9-image.jpg"
+              }, 
+              {
+                "name": "Sanga",
+                "avatar": "https://reqres.in/img/faces/10-image.jpg"
+              }
+            ]
         },
         {
           "f":13,
@@ -58,7 +105,11 @@
           "starttime": "14:00",
           "endtime": "15:20",
           "title": "iOS Seminar",
-          "members":[{"name": "Lana"}]
+          "members":[
+            {
+              "name": "Lana",
+              "avatar": "https://reqres.in/img/faces/7-image.jpg"
+            }]
         },
         {
           "f":13,
@@ -67,7 +118,16 @@
           "starttime": "15:30",
           "endtime": "16:20",
           "title": "CEO Visit",
-          "members":[{"name": "Virat"}]
+          "members":[
+            {
+              "name": "Ninon",
+              "avatar": "https://reqres.in/img/faces/2-image.jpg"
+            },
+            {
+              "name": "Erika",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/7-F.jpg"
+            }
+          ]
         },
         {
           "f":13,
@@ -76,7 +136,15 @@
           "starttime": "16:30",
           "endtime": "17:00",
           "title": "Cricket Match",
-          "members":[{"name": "Sashi"}, {"name": "Rachel"}]
+          "members":[
+            {
+              "name": "Mike",
+              "avatar": "https://reqres.in/img/faces/5-image.jpg"
+            }, 
+            {
+              "name": "Rachel",
+              "avatar": "https://reqres.in/img/faces/12-image.jpg"
+            }]
         },
         {
           "f":14,
@@ -85,7 +153,16 @@
           "starttime": "09:00",
           "endtime": "10:00",
           "title": "Client Call",
-          "members":[{"name": "Victor"}, {"name": "Nadeis"}]
+          "members":[
+            {
+              "name": "Victor",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+            }, 
+            {
+              "name": "Nadeis",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/16-M.jpg"
+            }
+          ]
         },
         {
           "f":14,
@@ -94,7 +171,14 @@
           "starttime": "10:00",
           "endtime": "11:00",
           "title": "Strategize App UI",
-          "members":[{"name": "Ninon"}, {"name": "Mathew"}]
+          "members":[
+            {
+            "name": "Anita",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+            }, {
+              "name": "Mike",
+              "avatar": "https://reqres.in/img/faces/5-image.jpg"
+              }]
         },
         {
           "f":14,
@@ -103,7 +187,16 @@
           "starttime": "14:15",
           "endtime": "15:30",
           "title": "Talk on Front-end",
-          "members":[{"name": "Shane"}, {"name": "Anita"}]
+          "members":[
+            {
+              "name": "David",
+              "avatar": "https://reqres.in/img/faces/4-image.jpg"
+            },
+            {
+              "name": "Lucia",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/9-F.jpg"
+            }
+            ]
         },
         {
           "f":15,
@@ -112,7 +205,16 @@
           "starttime": "10:00",
           "endtime": "11:00",
           "title": "Team Meeting",
-          "members":[{"name": "Nick"}, {"name": "Swatis"}]
+          "members":[
+            {
+              "name": "Shaid",            
+              "avatar": "https://reqres.in/img/faces/10-image.jpg"
+            }, 
+            {
+              "name": "Sanga",
+              "avatar": "https://reqres.in/img/faces/9-image.jpg"
+            }
+          ]
         },
         {
           "f":15,
@@ -121,7 +223,16 @@
           "starttime": "11:15",
           "endtime": "12:00",
           "title": "Welcoming Clients",
-          "members":[{"name": "Rick"}, {"name": "Naru"}, {"name": "Morty"}]
+          "members":[
+            {
+              "name": "Morty",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/10-M.jpg"
+            }, 
+            {
+              "name": "Victor",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/15-M.jpg"
+            }
+          ]
         },
         {
           "f":15,
@@ -130,7 +241,16 @@
           "starttime": "12:00",
           "endtime": "14:30",
           "title": "Lunch with Clients",
-          "members":[{"name": "Rick"}, {"name": "Naru"}, {"name": "Morty"}]
+          "members":[
+            {
+              "name": "Himus",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/17-M.jpg"
+            }, 
+            {
+              "name": "Dima",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/1-M.jpg"
+            }
+          ]
         },
         {
           "f":15,
@@ -139,7 +259,16 @@
           "starttime": "14:30",
           "endtime": "15:30",
           "title": "Addressing COO",
-          "members":[{"name": "Rohit"}]
+          "members":[
+            {
+              "name": "Rohit",
+              "avatar": "https://m.cricbuzz.com/a/img/v1/192x192/i1/c170658/rohit-sharma.jpg"
+            },
+            {
+              "name": "Yenee",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/8-F.jpg"
+            }
+          ]
         },
         {
           "f":15,
@@ -148,7 +277,16 @@
           "starttime": "16:00",
           "endtime": "17:00",
           "title": "Team Meeting",
-          "members":[{"name": "David"}, {"name": "Anita"}]
+          "members":[
+            {
+              "name": "Fati",
+              "avatar": "https://www.assyst.de/cms/upload/sub/digitalisierung/11-F.jpg"
+            }, 
+            {
+              "name": "Ismail",
+              "avatar": "https://reqres.in/img/faces/6-image.jpg"
+            }
+          ]
         }
       ]
       }

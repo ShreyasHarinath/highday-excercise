@@ -4,8 +4,8 @@
             <li v-for="title in tabTitles" 
             :key="title"
             :class="{ selected: title == selectedTitle }"
-            @click="selectedTitle = title"  >
-              {{ title }}
+            @click="selectedTitle = title">
+                {{ title }}
             </li>
       </ul>       
       <slot />
@@ -30,12 +30,13 @@ export default {
 
 
 <style scoped>
+
 .tabs{
        max-width: 400px;
        margin: 0 auto;
        position: center;
        opacity:0.75;
-       transition:100ms linear all;;
+       transition:100ms linear all;
 }
 
 .tabs__header{
@@ -49,12 +50,13 @@ export default {
 }
 
 .tabs__header li{
-    width: 78px;
-    height: 100px;
+    width: 90px;
+    height: 115px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 30px 26px;
     margin-right: 10px;
     background-color: #ddd;
+    color: blueviolet;
     border-radius: 60px;
     cursor: pointer;
     transition: 0.4s all ease-out;

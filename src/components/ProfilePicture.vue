@@ -1,7 +1,7 @@
 <template>
    <div class="image-container"> 
-    <img class="round" alt="dp" src="https://reqres.in/img/faces/2-image.jpg">
-        <div>Sara Stone</div></div>
+    <img class="round" alt="dp" src="https://reqres.in/img/faces/1-image.jpg">
+        <div>Harry Stone</div></div>
 </template>
 
 
