@@ -1,6 +1,6 @@
 <template>
   <img alt="logo" src="./assets/logo-highday-600x600.png">
-  <div class="posii"><ProfilePicture></ProfilePicture></div>
+  <div class="placeup"><ProfilePicture></ProfilePicture></div>
   <h3>April</h3>
   <TaskCard>
     <MonthDate title="12 Wed" style="background-color: #2B3856">
@@ -141,24 +141,6 @@ export default {
   background-color: #8EEBEC;
 }
 
-h3 {
- text-align: center;
- line-height: 80px;
- color:blueviolet;
- font-weight: bold;
-}
-
-hr{
-  color: whitesmoke;
-}
-
-.posii {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-
-}
-
 .title-container{
   margin: 10px;
   text-align: start ;
@@ -192,5 +174,22 @@ img {
   max-width: 40px;
 }
 
+.placeup {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+hr{
+  color: whitesmoke;
+}
+
+h3 
+{
+ text-align: center;
+ line-height: 80px;
+ color:blueviolet;
+ font-weight: bold;
+}
 
 </style>
